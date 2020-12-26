@@ -34,5 +34,10 @@ class ExploreViewController: UIViewController,UICollectionViewDataSource, UIColl
         return headerView
     }
     
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){
+               
+    }
+    
+    
     
 }
