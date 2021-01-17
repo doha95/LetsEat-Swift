@@ -194,15 +194,68 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-cy-urT">
-                                            <rect key="frame" x="326" y="35" width="67" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Locations"/>
-                                            <connections>
-                                                <segue destination="aOy-ud-Hgh" kind="presentation" id="2so-JE-hB2"/>
-                                            </connections>
-                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Xz-5rG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sod-PV-ViE">
+                                                    <rect key="frame" x="8" y="24" width="390" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="qTL-cM-vWt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                    <color key="textColor" name="LetsEat Dark Grey"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-UK-u2N">
+                                                    <rect key="frame" x="8" y="45" width="294" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="p13-fO-gcC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeP-cy-urT">
+                                                    <rect key="frame" x="310" y="50" width="96" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="BnV-1G-j5r"/>
+                                                        <constraint firstAttribute="width" constant="96" id="GCu-VU-zDh"/>
+                                                    </constraints>
+                                                    <state key="normal" image="btn-location"/>
+                                                    <connections>
+                                                        <segue destination="aOy-ud-Hgh" kind="presentation" id="2so-JE-hB2"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMD-Jd-JrB">
+                                                    <rect key="frame" x="8" y="89" width="398" height="1"/>
+                                                    <color key="backgroundColor" name="LetsEat Dark Grey"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="4eO-3b-emX"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="0Gi-UK-u2N" firstAttribute="leading" secondItem="Pip-Xz-5rG" secondAttribute="leading" constant="8" id="1kf-uQ-gDx"/>
+                                                <constraint firstAttribute="bottom" secondItem="dMD-Jd-JrB" secondAttribute="bottom" id="3dS-hp-e2d"/>
+                                                <constraint firstItem="BeP-cy-urT" firstAttribute="leading" secondItem="0Gi-UK-u2N" secondAttribute="trailing" constant="8" id="9sO-xm-dRT"/>
+                                                <constraint firstAttribute="trailing" secondItem="dMD-Jd-JrB" secondAttribute="trailing" constant="8" id="B3x-B0-3UL"/>
+                                                <constraint firstItem="BeP-cy-urT" firstAttribute="top" secondItem="Sod-PV-ViE" secondAttribute="bottom" constant="5" id="IUR-4f-lvm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Sod-PV-ViE" secondAttribute="trailing" constant="16" id="JTu-pu-P8c"/>
+                                                <constraint firstAttribute="trailing" secondItem="BeP-cy-urT" secondAttribute="trailing" constant="8" id="NHS-YO-bwF"/>
+                                                <constraint firstItem="Sod-PV-ViE" firstAttribute="leading" secondItem="Pip-Xz-5rG" secondAttribute="leading" constant="8" id="Pit-uj-bzP"/>
+                                                <constraint firstItem="Sod-PV-ViE" firstAttribute="top" secondItem="Pip-Xz-5rG" secondAttribute="top" constant="24" id="RDa-ho-cAr"/>
+                                                <constraint firstItem="0Gi-UK-u2N" firstAttribute="top" secondItem="Sod-PV-ViE" secondAttribute="bottom" id="ogP-B7-ERY"/>
+                                                <constraint firstAttribute="height" constant="90" id="wMQ-if-Hh4"/>
+                                                <constraint firstItem="dMD-Jd-JrB" firstAttribute="leading" secondItem="Pip-Xz-5rG" secondAttribute="leading" constant="8" id="y3f-Xy-uRF"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Pip-Xz-5rG" secondAttribute="trailing" id="IMp-mQ-h8U"/>
+                                        <constraint firstItem="Pip-Xz-5rG" firstAttribute="leading" secondItem="4wc-Zl-BHd" secondAttribute="leading" id="IQn-LU-2Gu"/>
+                                        <constraint firstItem="Pip-Xz-5rG" firstAttribute="top" secondItem="4wc-Zl-BHd" secondAttribute="top" id="bXc-gd-IAT"/>
+                                    </constraints>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="Bjb-67-MPg" id="BaW-bd-2J2"/>
@@ -340,10 +393,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn-location" width="96" height="25"/>
         <image name="icon-explore-on" width="35" height="23"/>
         <image name="icon-map-on" width="16" height="22"/>
         <namedColor name="Demo Grey">
             <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LetsEat Dark Grey">
+            <color red="0.68627450980392157" green="0.68627450980392157" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
