@@ -183,8 +183,43 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cmi-c5-NdL">
                                             <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENQ-RG-Gz8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="196" height="156"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-Zq-7Ok">
+                                                            <rect key="frame" x="0.0" y="0.0" width="196" height="156"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Tc3-Zq-7Ok" firstAttribute="leading" secondItem="ENQ-RG-Gz8" secondAttribute="leading" id="CJU-QC-U1e"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Tc3-Zq-7Ok" secondAttribute="bottom" id="OJj-ij-Wde"/>
+                                                        <constraint firstItem="Tc3-Zq-7Ok" firstAttribute="top" secondItem="ENQ-RG-Gz8" secondAttribute="top" id="R7r-fP-1vA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Tc3-Zq-7Ok" secondAttribute="trailing" id="ffB-wZ-Wg6"/>
+                                                        <constraint firstAttribute="height" constant="156" id="yXW-qh-J1M"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRY-vU-Wf7">
+                                                    <rect key="frame" x="8" y="165" width="180" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="gFQ-9U-NEQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ENQ-RG-Gz8" firstAttribute="leading" secondItem="Cmi-c5-NdL" secondAttribute="leading" id="9X1-1g-yaO"/>
+                                                <constraint firstAttribute="trailing" secondItem="uRY-vU-Wf7" secondAttribute="trailing" constant="8" id="A47-jK-gzy"/>
+                                                <constraint firstAttribute="trailing" secondItem="ENQ-RG-Gz8" secondAttribute="trailing" id="jaO-GO-cCN"/>
+                                                <constraint firstItem="uRY-vU-Wf7" firstAttribute="top" secondItem="ENQ-RG-Gz8" secondAttribute="bottom" constant="9" id="lz6-N8-y9K"/>
+                                                <constraint firstItem="ENQ-RG-Gz8" firstAttribute="top" secondItem="Cmi-c5-NdL" secondAttribute="top" id="p1y-77-hAy"/>
+                                                <constraint firstItem="uRY-vU-Wf7" firstAttribute="leading" secondItem="Cmi-c5-NdL" secondAttribute="leading" constant="8" id="spM-QJ-vJ4"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" name="Demo Grey"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <segue destination="0dA-hs-vfJ" kind="show" id="LQF-zQ-WTS"/>
                                         </connections>
