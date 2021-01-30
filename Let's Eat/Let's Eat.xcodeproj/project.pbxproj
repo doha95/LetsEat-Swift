@@ -14,6 +14,8 @@
 		447EE948258D5A9600F7F35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447EE946258D5A9600F7F35F /* LaunchScreen.storyboard */; };
 		447EE953258D5A9600F7F35F /* Let_s_EatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE952258D5A9600F7F35F /* Let_s_EatTests.swift */; };
 		447EE95E258D5A9600F7F35F /* Let_s_EatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447EE95D258D5A9600F7F35F /* Let_s_EatUITests.swift */; };
+		44933A3225C56161004ED3B8 /*  ExploreData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44933A3125C56161004ED3B8 /*  ExploreData.plist */; };
+		44933A3925C562FA004ED3B8 /* ExploreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44933A3825C562FA004ED3B8 /* ExploreItem.swift */; };
 		44A5F93E25965EDC00AFE86B /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A5F93D25965EDC00AFE86B /* ExploreViewController.swift */; };
 		44E518FA25A649470017F28B /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E518F925A649470017F28B /* RestaurantListViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,8 @@
 		447EE959258D5A9600F7F35F /* Let's EatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Let's EatUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447EE95D258D5A9600F7F35F /* Let_s_EatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let_s_EatUITests.swift; sourceTree = "<group>"; };
 		447EE95F258D5A9600F7F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44933A3125C56161004ED3B8 /*  ExploreData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = " ExploreData.plist"; sourceTree = "<group>"; };
+		44933A3825C562FA004ED3B8 /* ExploreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreItem.swift; sourceTree = "<group>"; };
 		44A5F93D25965EDC00AFE86B /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		44E518F925A649470017F28B /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +105,7 @@
 		447EE93A258D5A9500F7F35F /* Let's Eat */ = {
 			isa = PBXGroup;
 			children = (
+				44933A3625C5619F004ED3B8 /* Resources */,
 				44E518F825A649200017F28B /* Restaurants */,
 				44A5F93C25965E8A00AFE86B /* Explore */,
 				447EE93B258D5A9500F7F35F /* AppDelegate.swift */,
@@ -129,6 +134,23 @@
 				447EE95F258D5A9600F7F35F /* Info.plist */,
 			);
 			path = "Let's EatUITests";
+			sourceTree = "<group>";
+		};
+		44933A3625C5619F004ED3B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44933A3725C561CA004ED3B8 /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44933A3725C561CA004ED3B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44933A3125C56161004ED3B8 /*  ExploreData.plist */,
+				44933A3825C562FA004ED3B8 /* ExploreItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		44A5F93C25965E8A00AFE86B /* Explore */ = {
@@ -251,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				447EE948258D5A9600F7F35F /* LaunchScreen.storyboard in Resources */,
+				44933A3225C56161004ED3B8 /*  ExploreData.plist in Resources */,
 				447CC2CD258E72C200139B2A /* Assets.xcassets in Resources */,
 				447EE943258D5A9500F7F35F /* Main.storyboard in Resources */,
 			);
@@ -277,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44933A3925C562FA004ED3B8 /* ExploreItem.swift in Sources */,
 				447EE93C258D5A9500F7F35F /* AppDelegate.swift in Sources */,
 				44E518FA25A649470017F28B /* RestaurantListViewController.swift in Sources */,
 				447EE93E258D5A9500F7F35F /* SceneDelegate.swift in Sources */,
