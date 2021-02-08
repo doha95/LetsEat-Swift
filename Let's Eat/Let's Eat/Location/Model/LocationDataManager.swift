@@ -7,21 +7,21 @@
 
 import Foundation
 
-class LocationDataManager {
+class LocationDataManager : DataManager {
     
-    private var locations:[String] = []
+    private var locations:[String] = [];
     
-    private func loadData() -> [[String:AnyObject]]{
-        guard let path = Bundle.main.path(forResource: "Locations", ofType: "plist"),let items = NSArray(contentsOfFile:
-                                                                                                            path) else {
-            return [[:]];
-        }
-        return items as! [[String:AnyObject]];
-    }
+//    private func loadData() -> [[String:AnyObject]]{
+//        guard let path = Bundle.main.path(forResource: "Locations", ofType: "plist"),let items = NSArray(contentsOfFile:
+//                                                                                                            path) else {
+//            return [[:]];
+//        }
+//        return items as! [[String:AnyObject]];
+//    }
     
     
     func fetch(){
-        for location in loadData() {
+        for location in loadData(fileName: "Locations") {
             if let city = location["city"] as? String, let state = location["state"] as? String {
                 self.locations.append("\(city), \(state)")
             }
