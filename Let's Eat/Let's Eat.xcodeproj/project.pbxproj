@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4402DFFD25CACBA900457A73 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402DFFC25CACBA900457A73 /* LocationViewController.swift */; };
+		442A855A25D4100E00D8812B /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442A855925D4100E00D8812B /* PhotoFilter.storyboard */; };
 		4468286425C9707400622EE0 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468286325C9707400622EE0 /* ExploreDataManager.swift */; };
 		4468286A25C9986A00622EE0 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468286925C9986A00622EE0 /* ExploreCell.swift */; };
 		447CC2CD258E72C200139B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447CC2CC258E72C200139B2A /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		4402DFFC25CACBA900457A73 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		442A855925D4100E00D8812B /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
 		4468286325C9707400622EE0 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		4468286925C9986A00622EE0 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		447CC2CC258E72C200139B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +134,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		442A855825D40FF600D8812B /* PhotoFilter */ = {
+			isa = PBXGroup;
+			children = (
+				442A855925D4100E00D8812B /* PhotoFilter.storyboard */,
+			);
+			path = PhotoFilter;
+			sourceTree = "<group>";
+		};
 		4468286825C9982600622EE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +173,7 @@
 		447EE93A258D5A9500F7F35F /* Let's Eat */ = {
 			isa = PBXGroup;
 			children = (
+				442A855825D40FF600D8812B /* PhotoFilter */,
 				44A158D625D2C5FB006CD085 /* ReviewForm */,
 				44A158D025D2C5E0006CD085 /* RestaurantDetail */,
 				44A7449825D16C9F00416433 /* Misc */,
@@ -382,6 +393,7 @@
 			files = (
 				447EE948258D5A9600F7F35F /* LaunchScreen.storyboard in Resources */,
 				44933A3225C56161004ED3B8 /*  ExploreData.plist in Resources */,
+				442A855A25D4100E00D8812B /* PhotoFilter.storyboard in Resources */,
 				44A158D825D2C60E006CD085 /* ReviewForm.storyboard in Resources */,
 				447CC2CD258E72C200139B2A /* Assets.xcassets in Resources */,
 				44E0699225CB4C31002CC9B6 /* Locations.plist in Resources */,
