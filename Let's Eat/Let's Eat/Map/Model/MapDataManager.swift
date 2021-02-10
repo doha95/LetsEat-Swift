@@ -34,6 +34,7 @@ class MapDataManager : DataManager {
             return MKCoordinateRegion();
         }
         let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta);
+        // Span is similar to the zoom level
         return MKCoordinateRegion(center: item.coordinate , span: span);
     }
 }
