@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import MapKit
 
 class MapDataManager : DataManager {
     
@@ -26,5 +26,14 @@ class MapDataManager : DataManager {
             items.append(RestaurantItem(dict: returant));
         }
         completions(annotations);
+    }
+    
+    func currentRegion(latDelta:CLLocationDegrees,
+                longDelta:CLLocationDegrees) -> MKCoordinateRegion {
+        guard let item = items.first else {
+            return MKCoordinateRegion();
+        }
+        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta);
+        return MKCoordinateRegion(center: item.coordinate , span: span);
     }
 }
