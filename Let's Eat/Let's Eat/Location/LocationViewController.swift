@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LocationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class LocationViewController: UIViewController,UITableViewDelegate {
     
 
     @IBOutlet weak var tableView: UITableView!
@@ -15,12 +15,23 @@ class LocationViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        manager.fetch();
-        // Do any additional setup after loading the view.
+        initialize();
     }
     
+}
 
+//MARK: Private Extension
+private extension LocationViewController {
+    
+    func initialize(){
+        manager.fetch();
+    }
+    
+}
+
+//MARK: UITableViewDataSource
+extension LocationViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return manager.numberOfItems();
     }
@@ -31,6 +42,4 @@ class LocationViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         return cell;
     }
-    
-
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RestaurantListViewController: UIViewController ,UICollectionViewDataSource, UICollectionViewDelegate {
+class RestaurantListViewController: UIViewController , UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -17,6 +17,16 @@ class RestaurantListViewController: UIViewController ,UICollectionViewDataSource
         // Do any additional setup after loading the view.
     }
     
+    
+}
+
+//MARK: Private Extenstion
+private extension RestaurantListViewController {
+    
+}
+
+//MARK: UICollectionViewDataSource
+extension RestaurantListViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1;
     }
@@ -26,8 +36,4 @@ class RestaurantListViewController: UIViewController ,UICollectionViewDataSource
             collectionView.dequeueReusableCell(withReuseIdentifier:
                                                 "restaurantCell", for: indexPath);
     }
-    
-    
-    
-    
 }
