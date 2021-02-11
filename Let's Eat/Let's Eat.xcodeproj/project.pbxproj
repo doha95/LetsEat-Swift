@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4402DFFD25CACBA900457A73 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4402DFFC25CACBA900457A73 /* LocationViewController.swift */; };
 		442A855A25D4100E00D8812B /* PhotoFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442A855925D4100E00D8812B /* PhotoFilter.storyboard */; };
+		442A855F25D416F200D8812B /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A855E25D416F200D8812B /* Segue.swift */; };
+		4434432225D50D3E00B88AE5 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4434432125D50D3E00B88AE5 /* RestaurantDetailViewController.swift */; };
 		4468286425C9707400622EE0 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468286325C9707400622EE0 /* ExploreDataManager.swift */; };
 		4468286A25C9986A00622EE0 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4468286925C9986A00622EE0 /* ExploreCell.swift */; };
 		447CC2CD258E72C200139B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447CC2CC258E72C200139B2A /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		4402DFFC25CACBA900457A73 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		442A855925D4100E00D8812B /* PhotoFilter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoFilter.storyboard; sourceTree = "<group>"; };
+		442A855E25D416F200D8812B /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		4434432125D50D3E00B88AE5 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		4468286325C9707400622EE0 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		4468286925C9986A00622EE0 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		447CC2CC258E72C200139B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				44A158D125D2C5EF006CD085 /* RestaurantDetail.storyboard */,
+				4434432125D50D3E00B88AE5 /* RestaurantDetailViewController.swift */,
 			);
 			path = RestaurantDetail;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				44A7449925D16CB900416433 /* DataManager.swift */,
+				442A855E25D416F200D8812B /* Segue.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -429,7 +435,9 @@
 				44A7449425D15A6600416433 /* MapDataManager.swift in Sources */,
 				4468286A25C9986A00622EE0 /* ExploreCell.swift in Sources */,
 				447EE93C258D5A9500F7F35F /* AppDelegate.swift in Sources */,
+				442A855F25D416F200D8812B /* Segue.swift in Sources */,
 				44E518FA25A649470017F28B /* RestaurantListViewController.swift in Sources */,
+				4434432225D50D3E00B88AE5 /* RestaurantDetailViewController.swift in Sources */,
 				44A158CC25D2BE4D006CD085 /* MapViewController.swift in Sources */,
 				447EE93E258D5A9500F7F35F /* SceneDelegate.swift in Sources */,
 				44A5F93E25965EDC00AFE86B /* ExploreViewController.swift in Sources */,
