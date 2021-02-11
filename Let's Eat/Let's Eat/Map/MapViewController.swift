@@ -35,6 +35,7 @@ class MapViewController: UIViewController {
 
 //MARK: Private Extension
 private extension MapViewController {
+    
     func initialize () {
         mapView.delegate = self;
         
@@ -86,9 +87,8 @@ extension MapViewController: MKMapViewDelegate {
         else {
             let av = MKAnnotationView(annotation: annotation,
                                       reuseIdentifier: identifier)
-            av.rightCalloutAccessoryView =
-                UIButton(type:.detailDisclosure)
-            annotationView = av
+            av.rightCalloutAccessoryView = UIButton(type:.detailDisclosure);
+            annotationView = av;
         }
         if let annotationView = annotationView {
             annotationView.canShowCallout = true

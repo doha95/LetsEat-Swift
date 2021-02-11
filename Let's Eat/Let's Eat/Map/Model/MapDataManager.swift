@@ -18,14 +18,14 @@ class MapDataManager : DataManager {
     
 
     func fetch (completions:(_ annotations:[RestaurantItem])->()){
-        if annotations.count > 0 {
+        if items.count > 0 {
             //check if the annotations already had been filled, just make it empty
             items.removeAll();
         }
         for returant in loadData(fileName: "MapLocations") {
             items.append(RestaurantItem(dict: returant));
         }
-        completions(annotations);
+        completions(items);
     }
     
     func currentRegion(latDelta:CLLocationDegrees,

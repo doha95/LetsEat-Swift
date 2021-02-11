@@ -20,13 +20,14 @@ class RestaurantItem: NSObject, MKAnnotation {
     var imageURL: String?
     
     init(dict:[String:AnyObject]) {
-        if let lat = dict["lat"] as? Double {self.lat = lat}
-        if let long = dict["long"] as? Double {self.long = long}
-        if let address = dict["address"] as? String {self.address = address}
-        if let postalCode = dict["postalCode"] as? String {self.postalCode = postalCode}
-        if let state = dict["state"] as? String {self.state = state}
-        if let imageURL = dict["imageURL"] as? String {self.imageURL = imageURL}
-        if let cuisines = dict["cuisines"] as? [String] {self.cuisines = cuisines}
+        if let lat = dict["lat"] as? Double { self.lat = lat }
+        if let long = dict["long"] as? Double { self.long = long }
+        if let name = dict["name"] as? String { self.name = name }
+        if let cuisines = dict["cuisines"] as? [String] { self.cuisines = cuisines }
+        if let address = dict["address"] as? String { self.address = address }
+        if let postalCode = dict["postalCode"] as? String { self.postalCode = postalCode }
+        if let state = dict["state"] as? String { self.state = state }
+        if let image = dict["image_url"] as? String { self.imageURL = image }
     }
     
     var coordinate: CLLocationCoordinate2D {
